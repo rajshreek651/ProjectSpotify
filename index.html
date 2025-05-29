@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="./spotify pics/logo.png"> <!--Favicon: to display spotify's icon in the title of the webpage-->
+    <title>Spotify - Web Player: Music for everyone</title>
+
+    <!-- TO USE DIIFERENT ICONS AND STYLES FROM font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Montserrat Font Style weights 100-900 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css"> <!-- my CSS file for styling the webpage -->
+</head>
+<body>
+    <div class="main">
+
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="library">
+                <div class="options">
+                    <div class="lib-option nav-option">
+                        <img src="./spotify pics/library_icon.png" alt="Your Library">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="lib-box">
+                    <div class="box">
+                        <p class="box-p1">Create your first playlist</p>
+                        <p class="box-p2">It's easy, we'll help you</p>
+                        <button class="badge">Create playlist</button>
+                    </div>
+                    <div class="box">
+                        <p class="box-p1">Let's find some podcasts to follow</p>
+                        <p class="box-p2">We'll keep you updated on new episodes</p>
+                        <button class="badge">Browse podcasts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                    <img src="./spotify pics/backward_icon.png" alt="Backward">
+                    <img src="./spotify pics/forward_icon.png" alt="Forward" class="hide">
+                </div>
+                <div class="sticky-nav-options">
+                    <button class="badge opt hide">Explore Premium</button>
+                    <button class="badge dark-badge opt"><i class="fa-regular fa-circle-down" style="margin-right: 0.5rem;"></i>Install App</button>
+                    <div class="user opt"><i class="fa-regular fa-user"></i></div>
+                </div>
+            </div>
+            <h2>Recently played</h2>
+            <div class="cards-container">
+
+                <div class="card">
+                    <img src="./spotify pics/Bhay-Pragat-Kripala.jpg" alt="Cover1" class="card-img">
+                    <p class="card-title">Bhay Pragat Kripala</p>
+                    <p class="card-info">Parampara, Sachet Tandon</p>
+                </div>
+                <div class="card">
+                    <img src="./spotify pics/card1img.jpeg" alt="Cover1" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+
+            </div>
+            <h2>Trending now near you</h2>
+            <div class="cards-container">
+
+                <div class="card">
+                    <img src="./spotify pics/card2img.jpeg" alt="Cover1" class="card-img">
+                    <p class="card-title">Mahiye Jinna Sohna</p>
+                    <p class="card-info">Precious stones era</p>
+                </div>
+                <div class="card">
+                    <img src="./spotify pics/card3img.jpeg" alt="Cover1" class="card-img">
+                    <p class="card-title">Mere Paas Tum Ho</p>
+                    <p class="card-info">Rahat Fateh Ali Khan</p>
+                </div>
+                <div class="card">
+                    <img src="./spotify pics/card4img.jpeg" alt="Cover1" class="card-img">
+                    <p class="card-title">Alter Ego Naa Ready</p>
+                    <p class="card-info">Featuring Thalapathy Vijay...</p>
+                </div>
+                <div class="card">
+                    <img src="./spotify pics/sitaRamam.jpeg" alt="Cover1" class="card-img">
+                    <p class="card-title">Sita Ramam</p>
+                    <p class="card-info">Mrunal Thakur, Rashmika Mandanna...</p>
+                </div>
+                <div class="card">
+                    <img src="./spotify pics/Pushpa-1-The-Rise.png" alt="Cover1" class="card-img">
+                    <p class="card-title">Pushpa: The Rise</p>
+                    <p class="card-info">Allu Arjun, Rashmika Mandanna...</p>
+                </div>
+                <div class="card">
+                    <img src="./spotify pics/Pushpa-2-The-Rule.jpg" alt="Cover1" class="card-img">
+                    <p class="card-title">Pushpa 2: The Rule</p>
+                    <p class="card-info">Allu Arjun, Rashmika Mandanna...</p>
+                </div>
+
+            </div>
+            <h2>Featured charts</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./spotify pics/card5img.jpeg" alt="Cover1" class="card-img">
+                    <p class="card-title">Top Songs Global</p>
+                    <p class="card-info">Your weekly updates of the most played...</p>
+                </div>
+                <div class="card">
+                    <img src="./spotify pics/card6img.jpeg" alt="Cover1" class="card-img">
+                    <p class="card-title">Top Songs India</p>
+                    <p class="card-info">Your weekly updates of the most played...</p>
+                </div>
+                <div class="card">
+                    <img src="./spotify pics/card1img.jpeg" alt="Cover1" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="line"></div>
+                <div class="footer-content"> 
+                   <div class="footer-opt">
+                        <p>Company</p>
+                        <a href="#">About</a>
+                        <a href="#">Jobs</a>
+                        <a href="#">For the Record</a>
+                   </div> 
+                   <div class="footer-opt">
+                        <p>Communities</p>
+                        <a href="#">For Artists</a>
+                        <a href="#">Developers</a>
+                        <a href="#">Advertising</a>
+                        <a href="#">Investors</a>
+                        <a href="#">Vendors</a>
+                   </div>
+                   <div class="footer-opt">
+                        <p>Useful links</p>
+                        <a href="#">Support</a>
+                        <a href="#">Free Mobile App</a>
+                        <a href="#">Popular by Country</a>
+                   </div>
+                   <div class="footer-opt">
+                        <p>Spotify Plans</p>
+                        <a href="#">Premium Individual</a>
+                        <a href="#">Premium Duo</a>
+                        <a href="#">Premium Family</a>
+                        <a href="#">Premium Student</a>
+                        <a href="#">Spotify Free</a>
+                   </div>
+                   <div class="footer-opt">
+                        <div class="footer-opt-icon-container">
+                            <div class="footer-opt-icon"><i class="fa-brands fa-instagram"></i></div>
+                            <div class="footer-opt-icon"><i class="fa-brands fa-twitter"></i></div>
+                            <div class="footer-opt-icon"><i class="fa-brands fa-facebook"></i></div>
+                        </div>
+                   </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="line"></div>
+                <div class="footer-copyright-links">
+                    <div class="footer-copyright-links-opts">
+                        <p class="link">Legal</p>
+                        <p class="link">Safety & Privacy Center</p>
+                        <p class="link">Privacy Policy</p>
+                        <p class="link">Cookies</p>
+                        <p class="link">About Ads</p>
+                        <p class="link">Accessibility</p>
+                    </div>
+                    <div class="footer-copyright-links-opts link" style="width: 18%;">
+                        © 2025 Spotify AB
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="music-player">
+            <div class="album">
+                <img src="./spotify pics/Ghar-More-Pardesia.jpg" alt="Cover1" class="album-cover">
+                <div class="about-album">
+                    <a class="album-title">Ghar More Pardesia</a>
+                    <a class="album-artist">Pritam Chakraborty, Shreya Ghoshal, Vaishali Mhade</a>
+                </div>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+
+            <div class="player">
+                <div class="player-controls">
+                    <img src="./spotify pics/player_icon1.png" class="player-control-icon">
+                    <img src="./spotify pics/player_icon2.png" class="player-control-icon">
+                    <img src="./spotify pics/player_icon3.png" class="player-control-icon" style="opacity: 1; height: 2rem;">
+                    <img src="./spotify pics/player_icon4.png" class="player-control-icon">
+                    <img src="./spotify pics/player_icon5.png" class="player-control-icon">
+                </div>
+                <div class="playback-bar">
+                    <span class="time curr-time">00:00</span>
+                    <input type="range" class="progress-bar" value="0" min="0" max="100" step="1">
+                    <span class="time tot-time">4:00</span>
+                </div>
+            </div>
+
+            <div class="controls">
+                <i class="fa-regular fa-circle-play" style="color:#1bd760"></i>
+                <i class="fa-solid fa-music"></i>
+                <div class="vol">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="M560-131v-82q90-26 145-100t55-168q0-94-55-168T560-749v-82q124 28 202 125.5T840-481q0 127-78 224.5T560-131ZM120-360v-240h160l200-200v640L280-360H120Zm440 40v-322q47 22 73.5 66t26.5 96q0 51-26.5 94.5T560-320ZM400-606l-86 86H200v80h114l86 86v-252ZM300-480Z"/></svg>
+                    <input type="range" class="progress-bar" value="0" min="0" max="100" step="1">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
